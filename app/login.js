@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Image, StyleSheet, Text, View, TouchableOpacity, SafeAreaView, TextInput } from 'react-native';
+import { ToastAndroid, Image, StyleSheet, Text, View, TouchableOpacity, SafeAreaView, TextInput } from 'react-native';
 import { Link, useRouter } from "expo-router";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -19,6 +19,7 @@ const Login = () => {
       }
 
     const onPress = async () => {
+        ToastAndroid.show('Login successfully!', ToastAndroid.SHORT);
         storeData('sudahLogin')
         // const test = await AsyncStorage.setItem('auth', 'sudahlogin')
         // console.log("test simpan data", test)

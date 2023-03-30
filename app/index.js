@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View , Image} from "react-native";
 import { Link } from "expo-router";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useEffect, useState } from "react";
@@ -26,6 +26,9 @@ export default function Home() {
   }, [])
   return (
     <View style={styles.container}>
+      <View style={{marginTop:80}}>
+        <Image source={require('../assets/coffebg.jpg')} style={{width: 200, height: 200}}/>
+      </View>
       <View style={styles.main}>
         {
           user == 'sudahLogin' ? 

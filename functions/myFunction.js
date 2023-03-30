@@ -23,13 +23,9 @@ const storeDataString = async (value) => {
   const getDataString = async () => {
     try {
       const value = await AsyncStorage.getItem('@storage_Key')
-      if(value !== null) {
-        // value previously stored
-      }
+      return value
     } catch(e) {
         console.log("error")
-
-      // error reading value
     }
   }
 
@@ -43,3 +39,4 @@ const storeDataString = async (value) => {
       // error reading value
     }
   }
+  
