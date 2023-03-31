@@ -1,7 +1,8 @@
-import { StyleSheet, Text, View , Image} from "react-native";
+import { StyleSheet, Text, View , Image, ImageBackground} from "react-native";
 import { Link } from "expo-router";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useEffect, useState } from "react";
+import Button from "../components/button";
 
 export default function Home() {
   const [user,setUser] = useState("")
@@ -26,10 +27,11 @@ export default function Home() {
   }, [])
   return (
     <View style={styles.container}>
-      <View style={{marginTop:80}}>
+      <ImageBackground source={require('../assets/coffebg.jpg')} resizeMode="cover" style={styles.image} >
+      
+      {/* <View style={{marginTop:80}}>
         <Image source={require('../assets/coffebg.jpg')} style={{width: 200, height: 200}}/>
-        <Link href="/Home" >Home</Link>
-      </View>
+      </View> */}
       <View style={styles.main}>
         {
           user == 'sudahLogin' ? 
@@ -52,6 +54,10 @@ export default function Home() {
         </Text>
         <Text style={styles.subtitle}>This is the first page of your app.</Text>
       </View>
+      <View>
+        <Button/>
+      </View>
+      </ImageBackground>
     </View>
   );
 }
@@ -60,7 +66,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "center",
-    padding: 24,
+  },
+  image: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   main: {
     flex: 1,
@@ -71,9 +81,10 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 64,
     fontWeight: "bold",
+    color: 'white'
   },
   subtitle: {
     fontSize: 36,
-    color: "#38434D",
+    color: 'white',
   },
 });

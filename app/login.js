@@ -29,8 +29,8 @@ const Login = () => {
 
     return (
         <SafeAreaView style={styles.container}>
-            <Link style={{marginHorizontal: 20}} href="/" replace onPress={()=> console.log("back to home")}>Home</Link>
-
+            {/* <Link style={{marginHorizontal: 20}} href="/" replace onPress={()=> console.log("back to home")}>Home</Link> */}
+            <Link style={{marginHorizontal: 20}} href="/home" replace onPress={()=>console.log("test")}>Home</Link>
             <View style={styles.appname}>
                 <View style={{ flexDirection: 'column', alignItems: 'center' }}>
                     <Image
@@ -42,10 +42,6 @@ const Login = () => {
                             marginBottom: 20
                         }}
                         source={require('../assets/favicon.png')}
-                        // source={{
-                        //     uri: 'https://reactnative.dev/img/tiny_logo.png',
-                        // }}
-                    // source={{uri: 'https://images.unsplash.com/photo-1633409361618-c73427e4e206?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80'}}
                     />
                     <Text style={styles.baseText}>
                         SIBAY
