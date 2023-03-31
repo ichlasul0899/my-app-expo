@@ -28,6 +28,7 @@ export default function Home() {
     <View style={styles.container}>
       <View style={{marginTop:80}}>
         <Image source={require('../assets/coffebg.jpg')} style={{width: 200, height: 200}}/>
+        <Link href="/Home" >Home</Link>
       </View>
       <View style={styles.main}>
         {
