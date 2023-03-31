@@ -27,7 +27,6 @@ export default function Home() {
   }, [])
   return (
     <View style={styles.container}>
-      <ImageBackground source={require('../assets/coffebg.jpg')} resizeMode="cover" style={styles.image} >
       
       {/* <View style={{marginTop:80}}>
         <Image source={require('../assets/coffebg.jpg')} style={{width: 200, height: 200}}/>
@@ -54,10 +53,14 @@ export default function Home() {
         </Text>
         <Text style={styles.subtitle}>This is the first page of your app.</Text>
       </View>
+
+    
       <View>
         <Button/>
       </View>
-      </ImageBackground>
+      {/* <ImageBackground source={require('../assets/coffebg.jpg')} resizeMode="cover" style={styles.image} >
+
+      </ImageBackground> */}
     </View>
   );
 }
@@ -81,10 +84,23 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 64,
     fontWeight: "bold",
-    color: 'white'
+    color: 'black'
   },
   subtitle: {
     fontSize: 36,
-    color: 'white',
+    color: 'burlywood',
   },
+  button: {
+    alignItems: 'center',
+    backgroundColor: 'burlywood',
+    padding: 10,
+    marginBottom: 10,
+    marginHorizontal: 10,
+    width: 320,
+    borderRadius: 10
+},
+btnTitle: {
+    color: '#ffffff',
+    fontWeight: 'bold'
+}
 });

@@ -35,3 +35,17 @@ const Profile = () => {
 }
 
 export default Profile;
+
+<ImageBackground source={require('../assets/saldobg.jpg')} resizeMode="cover" style={styles.image} >
+    <SafeAreaView style={styles.container}>
+      <Image
+          style={{ width: 50, height: 50 }}
+          source={require("../assets/wokeelogo.png")}
+        />
+        <View style={styles.textContainer}>
+          <Text style={styles.title}>Halo, Ichlasul Amal</Text>
+          <Text style={styles.subTitle}>Masuk Terakhir : 31 MAR 23 20.01</Text>
+        </View>
+
+    </SafeAreaView>
+</ImageBackground>

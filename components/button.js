@@ -1,10 +1,16 @@
 import React from 'react'
 import { TouchableOpacity, View, Text, StyleSheet } from 'react-native'
+import { Link, useRouter } from "expo-router";
 
 const Button = () => {
+    const router = useRouter();
+
+    const onPress = () => {
+        router.replace("/wokee")
+    }
   return (
     <View>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={onPress}>
             <Text style={styles.btnTitle}>Get Started</Text>
 
         </TouchableOpacity>

@@ -2,7 +2,7 @@ import { Tabs } from "expo-router";
 import { AntDesign, Entypo } from '@expo/vector-icons';
 
 export default () => {
-    return <Tabs style={{border: "1px solid red"}} screenOptions={{
+    return <Tabs screenOptions={{
         tabBarShowLabel: true,
         tabBarActiveTintColor: "white",
         tabBarActiveBackgroundColor: "burlywood",
