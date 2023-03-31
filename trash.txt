@@ -22,3 +22,16 @@
   // },
 
       <TextInput style={styles.input} onChangeText={setUsername} value={username} keyboardType="numeric" />
+
+
+import { View, Text } from "react-native";
+
+const Profile = () => {
+  return (
+    <View>
+        <Text>Profile Home Screen</Text>
+    </View>
+  );
+}
+
+export default Profile;
