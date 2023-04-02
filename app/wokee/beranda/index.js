@@ -1,4 +1,4 @@
-import { ScrollView } from "react-native";
+import { ScrollView, Text } from "react-native";
 import Features from "../../../components/features";
 import FeaturesTop from "../../../components/featuresTop";
 import InfoSilder from "../../../components/infoSlider";
